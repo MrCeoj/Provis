@@ -44,7 +44,7 @@
   z-index: -1;
 }
 
-main {
+#home {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,7 +85,7 @@ h1 {
     width: 80%;
     min-width: 200px;
   }
-  main {
+  #home {
     width: 100%;
   }
 }

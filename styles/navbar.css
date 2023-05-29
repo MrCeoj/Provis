@@ -35,7 +35,7 @@
 .burga {
   height: 0;
   background-color: var(--secondary);
-  transition: 0.3s ease;
+  transition: 0.3s ease all;
 }
 
 .burga ul {

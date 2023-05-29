@@ -1,0 +1,144 @@
+#about {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.services {
+  width: 80%;
+  font-family: Bahnschrift;
+  text-align: center;
+  color: white;
+  font-size: 1.3em;
+  margin: 20px 0;
+}
+
+.services p {
+  padding: 15px 0;
+}
+
+.card {
+  position: relative;
+  top: -100px;
+  left: -51px;
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: rotate(10deg);
+  background-position: center;
+  background-size: 185%;
+  background-repeat: no-repeat;
+  margin: 5px;
+  transition: 0.1s linear all;
+}
+
+.cardfinal {
+  position: relative;
+  top: -100px;
+  left: -51px;
+  width: 350px;
+  height: 500px;
+  display: flex;
+  transform: rotate(10deg);
+  background-position: left;
+  background-size: 130%;
+  background-repeat: no-repeat;
+  margin: 5px -80px 5px 5px;
+  transition: 0.1s linear all;
+}
+
+.gallery {
+  max-width: 1200px;
+  height: 300px;
+  display: flex;
+  overflow: hidden;
+}
+
+.head3 {
+  font-family: Bahnschrift;
+  color: var(--text);
+  transform: rotate(-10deg);
+  margin-top: 400px;
+  transition: 0.1s ease-out all;
+}
+
+.head3.active {
+  margin-top: 350px;
+}
+
+.cardfinal .head3 {
+  margin: 400px 0 0 60px;
+}
+
+.cardfinal .head3.active {
+  margin: 350px 0 0 60px;
+}
+
+@media (max-width: 1200px) {
+  .gallery {
+    align-self: center;
+    max-width: 1000px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: auto;
+  }
+  .card {
+    top: 0;
+    left: 0;
+    height: 400px;
+    transform: rotate(0);
+  }
+
+  .cardfinal {
+    top: 0;
+    left: 0;
+    height: 400px;
+    margin: 5px;
+    transform: rotate(0);
+  }
+
+  .head3 {
+    color: var(--main);
+    transform: rotate(0);
+  }
+
+  .head3.active {
+    color: var(--text);
+  }
+
+  .cardfinal .head3 {
+    justify-content: center;
+    margin-top: 400px;
+  }
+
+  .cardfinal .head3.active {
+    margin-top: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    height: 200px;
+  }
+
+  .cardfinal {
+    height: 200px;
+  }
+
+  .head3.active {
+    margin-top: 150px;
+  }
+
+  .cardfinal .head3 {
+    margin-top: 200px;
+  }
+
+  .cardfinal .head3.active {
+    margin-top: 150px;
+  }
+}
