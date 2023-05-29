@@ -7,8 +7,6 @@ var ismobile = () => {
   window.innerWidth <= 700;
 };
 
-window.onload = rendercontact();
-
 document.getElementById("icon").addEventListener("click", (e) => {
   e.preventDefault();
   if (burga.classList.contains("active")) {
