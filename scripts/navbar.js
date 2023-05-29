@@ -7,7 +7,7 @@ var ismobile = () => {
   window.innerWidth <= 700;
 };
 
-window.onload = renderabout();
+window.onload = rendercontact();
 
 document.getElementById("icon").addEventListener("click", (e) => {
   e.preventDefault();

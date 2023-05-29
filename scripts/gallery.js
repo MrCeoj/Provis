@@ -92,7 +92,7 @@ letrero.addEventListener("mouseenter", (e) => {
   headers[4].classList.add("active");
   letrero.style.backgroundSize = "100%";
   if (window.innerWidth>700) {
-    letrero.style.backgroundSize = "170%";
+    letrero.style.backgroundSize = "110%";
   }
 });
 
@@ -102,6 +102,6 @@ letrero.addEventListener("mouseleave", (e) => {
   headers[4].classList.remove("active");
   letrero.style.backgroundSize = "120%";
   if (window.innerWidth>700) {
-    letrero.style.backgroundSize = "185%";
+    letrero.style.backgroundSize = "130%";
   }
 });

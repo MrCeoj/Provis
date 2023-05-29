@@ -18,7 +18,7 @@
     <nav>
         <div class="container">
             <div class="brand">
-                <img src="img/Brand.png" alt="ProVis">
+                <img src="img/Brand.png" alt="ProVis" draggable="false">
             </div>
             <div class="burger">
                 <i id="icon" class="fa-solid fa-bars"></i>
@@ -41,23 +41,23 @@
         </ul>
     </div>
 
-    <main id="home">
+    <section id="home">
         <div class="me">
             <div class="about">
-                <h1>Proyectamos tu visión<br />y tus ideas</h1>
+                <h1>Proyectamos tu visión<br>y tus ideas</h1>
                 <div class="desc">Nos encargamos de crear y fabricar gran variedad de productos publicitarios en base a
-                    tus necesidades.<br /><br />Te ayudamos a sumarle presencia a tu negocio o marca en toda la ciudad.
+                    tus necesidades.<br><br>Te ayudamos a sumarle presencia a tu negocio o marca en toda la ciudad.
                 </div>
             </div>
             <div class="vidiv">
-                <video width="360px" autoplay muted loop class="video">
+                <video autoplay muted loop class="video">
                     <source src="vid/provisweb.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
-    </main>
+    </section>
 
-    <main id="about">
+    <section id="about">
         <div class="services">
             <h1>Nuestros servicios</h1>
             <p>Como parte del sector de fabricación de productos publicitarios, el catálogo de ofertas es el siguiente
@@ -80,17 +80,44 @@
                 <h3 class="head3">Señales de negocio</h3>
             </div>
         </div>
-    </main>
+    </section>
 
-    <main id="contact"></main>
+    <section id="contact">
+        <h1>Ponte en contacto con nosotros</h1>
+        <p>¡Y convierte tus ideas en publicidad!</p>
+        <div id="form" class="form">
+            <form>
+                <section class="row">
+                    <div class="selection">
+                        <label for="nome">Nombre</label>
+                        <input id="nome" type="text" placeholder="Tu nombre">
+                    </div>
+                    <div class="selection">
+                        <label for="mail">Correo</label>
+                        <input id="mail" type="email" placeholder="ejemplo@correo.com">
+                    </div>
+                </section>
+                <div class="selection2">
+                    <label for="subject">Asunto</label>
+                    <input id="subject" type="text" placeholder="Tu idea">
+                </div>
+                <div class="selection2">
+                    <label for="message">Mensaje</label>
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Desarrolla tu idea"></textarea>
+                </div>
+            </form>
+            <button onclick="send()">Enviar</button>
+        </div>
+    </section>
 
     <footer>
         <h2>© ProVis Publicidad | All Rights Reserved</h2>
     </footer>
+    <script src="https://kit.fontawesome.com/e26a6f3c1a.js" crossorigin="anonymous"></script>
+    <script src="/scripts/navbar.js"></script>
+    <script src="/scripts/gallery.js"></script>
+    <script src="scripts/contact.js"></script>
 </body>
 
-<script src="https://kit.fontawesome.com/e26a6f3c1a.js" crossorigin="anonymous"></script>
-<script src="/scripts/navbar.js"></script>
-<script src="/scripts/gallery.js"></script>
 
 </html>
