@@ -23,6 +23,11 @@
   flex-grow: 4;
 }
 
+.burger {
+  display: none;
+  font-size: 1.5em;
+}
+
 .container {
   display: flex;
   width: 80%;
@@ -86,13 +91,22 @@ button:hover {
 }
 
 @media (max-width: 840px) {
-    .container{
-        width: 100%;
-    }
+  .container {
+    width: 100%;
+  }
 }
 
-@media(max-width: 700px){
-    ul{
-        display: none;
-    }
+@media (max-width: 700px) {
+  ul {
+    display: none;
+  }
+  .brand{
+    margin-left: 5px;
+  }
+  .burger{
+    display: block;
+  }
+  .options{
+    justify-content: center;
+  }
 }
