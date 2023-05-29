@@ -1,5 +1,22 @@
-footer{
-    height: 40px;
-    background-color: var(--secondary);
-    margin-top: 30px;
+footer {
+  font-family: Bahnschrift;
+  min-height: 40px;
+  background-color: var(--secondary);
+  margin-top: auto;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: flex-end;
+}
+
+footer h2{
+    font-size: 1.1em;
+    font-weight: 100;
+}
+
+@media(max-width:400px){
+    footer{
+        font-size: 0.8em;
+    }
 }
